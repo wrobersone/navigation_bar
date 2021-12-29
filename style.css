@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+}
+
+nav {
+    background: deepskyblue;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    height: 70px;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+nav .navbar {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    max-width: 1280px;
+    margin: auto;
+    padding: 0 50px;
+    justify-content: space-between;
+}
+
+nav .navbar .logo a {
+    color: white;
+    font-size: 30px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+nav .navbar .nav-links {
+    height: 100%;
+    line-height: 70px;
+}
+
+nav .navbar .nav-links .links {
+    display: flex;
+}
+
+nav .navbar .nav-links .links li {
+    align-items: center;
+    display: flex;
+    list-style: none;
+    padding: 0 14px;
+    position: relative;
+}
+
+nav .navbar .nav-links .links li a {
+    color: white;
+    height: 100%;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+nav .navbar .nav-links .links li .arrow {
+    color: white;
+    height: 100%;
+    line-height: 70px;
+    text-align: center;
+    width: 22px;
+}
+
+.navbar .nav-links .links li:hover .first-arrow,
+.navbar .nav-links .links li:hover .second-arrow,
+.navbar .nav-links .links li:hover .third-arrow {
+    transform: rotate(180deg);
+}
+
+.navbar .nav-links .links .sub-menu {
+    background: deepskyblue;
+    border-radius: 0 0 4px 4px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    display: none;
+    left: 0;
+    line-height: 40px;
+    position: absolute;
+    top: 70px;
+}
+
+.navbar .nav-links .links .sub-menu li {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 0 22px;
+}
+
+.navbar .nav-links .links .sub-menu li a {
+    font: 500;
+    font-size: 15px;
+}
+
+.navbar .nav-links .links .sub-menu li .mobile-arrow,
+.navbar .nav-links .links .sub-menu li .web-arrow {
+    line-height: 40px;
+}
+
+.navbar .nav-links .links li:hover .about-sub-menu,
+.navbar .nav-links .links li:hover .gallery-sub-menu,
+.navbar .nav-links .links li:hover .services-sub-menu {
+    display: block;
+}
+
+
+.navbar .nav-links .links .design .design-sub-menu {
+    left: 100%;
+    border-radius: 0 4px 4px 4px;
+    position: absolute;
+    top: 0;
+    display: none;
+}
+
+.navbar .nav-links .links .design:hover .design-sub-menu {
+    display: block;
+}
