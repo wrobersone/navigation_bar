@@ -23,6 +23,18 @@ closeOpenBtn.addEventListener("click", () => {
     navLinks.style.left = "-100%";
 });
 
-menuCloseBtn.addEventListener("click", () => {
-    navLinks.getElementsByClassName.left = "-100%";
+// Sidebar Sub Menu Action
+let htmlcssArrow = document.querySelector(".htmlcss-arrow");
+htmlcssArrow.addEventListener("click", () => {
+    navLinks.classList.toggle("show1");
+});
+
+let moreArrow = document.querySelector(".more-arrow");
+moreArrow.addEventListener("click", () => {
+    navLinks.classList.toggle("show2");
+});
+
+let jsArrow = document.querySelector(".js-arrow");
+jsArrow.addEventListener("click", () => {
+    navLinks.classList.toggle("show3");
 });
